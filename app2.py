@@ -340,7 +340,7 @@ st.markdown("---")
 with st.spinner("Loading model..."):
     try:
         model_data = load_model_and_data()
-        st.success("Model loaded successfully", icon="✓")
+        st.success("Model loaded successfully")
     except Exception as e:
         st.error(f"Error loading model: {e}")
         st.stop()
@@ -587,3 +587,4 @@ if uploaded is not None:
 
     except Exception as e:
         st.error(f"Batch prediction error: {e}")
+
