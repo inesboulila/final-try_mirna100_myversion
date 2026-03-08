@@ -713,3 +713,4 @@ if uploaded is not None:
     except Exception as e:
 
         st.error(f"Batch prediction error: {e}")
+
