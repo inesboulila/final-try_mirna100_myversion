@@ -185,10 +185,8 @@ st.markdown("""
 # ════════════════════════════════════════════════════════════════
 #  LOAD MODEL AND DATA
 # ════════════════════════════════════════════════════════════════
-
-BASE_DIR   = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "model_final_GB.pkl")
-DATA_PATH  = os.path.join(BASE_DIR, "microrna_top100_balanced_final.xlsx")
+MODEL_PATH = r"C:\Users\MSI\Desktop\PFE\PHASE 2\model_final_GB.pkl"
+DATA_PATH  = r"C:\Users\MSI\Desktop\PFE\PHASE 2\microrna_top100_balanced_final.xlsx"
 
 @st.cache_resource
 def load_model_and_data():
