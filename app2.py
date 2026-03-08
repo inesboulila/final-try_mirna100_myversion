@@ -185,8 +185,8 @@ st.markdown("""
 # ════════════════════════════════════════════════════════════════
 #  LOAD MODEL AND DATA
 # ════════════════════════════════════════════════════════════════
-MODEL_PATH = r"C:\Users\MSI\Desktop\PFE\PHASE 2\model_final_GB.pkl"
-DATA_PATH  = r"C:\Users\MSI\Desktop\PFE\PHASE 2\microrna_top100_balanced_final.xlsx"
+MODEL_PATH = "model_final_GB.pkl"
+DATA_PATH  = "microrna_top100_balanced_final.xlsx"
 
 @st.cache_resource
 def load_model_and_data():
@@ -713,4 +713,5 @@ if uploaded is not None:
     except Exception as e:
 
         st.error(f"Batch prediction error: {e}")
+
 
